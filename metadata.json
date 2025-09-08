@@ -1,0 +1,5 @@
+{
+  "name": "Powerball Analysis",
+  "description": "An advanced application for analyzing Powerball historical data to generate number recommendations based on statistical patterns and AI insights.",
+  "requestFramePermissions": []
+}

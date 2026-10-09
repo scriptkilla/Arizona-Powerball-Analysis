@@ -1,1 +1,454 @@
-aW1wb3J0IHsgR29vZ2xlR2VuQUksIFR5cGUgfSBmcm9tICJAZ29vZ2xlL2dlbmFpIjsKaW1wb3J0IHR5cGUgeyBBbmFseXNpc1Jlc3VsdHMsIFRpY2tldCwgQUlUaWNrZXRBbmFseXNpcywgQWR2YW5jZWRBSUluc2lnaHQgfSBmcm9tICcuLi90eXBlcyc7CmltcG9ydCB7IE1BWF9XSElURV9CQUxMLCBNQVhfUE9XRVJCQUxMX0NVUlJFTlQsIE5VTV9XSElURV9CQUxMUyB9IGZyb20gJy4uL2NvbnN0YW50cyc7CgovLyBMYXppbHkgY3JlYXRlIHRoZSBjbGllbnQgb25seSB3aGVuIGFuIEFJIGZlYXR1cmUgaXMgYWN0dWFsbHkgdXNlZC4KLy8gQ29uc3RydWN0aW5nIGl0IGF0IG1vZHVsZSBsZXZlbCBjcmFzaGVzIHRoZSB3aG9sZSBhcHAgaW4gdGhlIGJyb3dzZXIKLy8gd2hlbiBubyBBUEkga2V5IGlzIGNvbmZpZ3VyZWQsIGJlY2F1c2UgdGhlIFNESyB0aHJvd3Mgb24gaW5pdC4KbGV0IGFpOiBHb29nbGVHZW5BSSB8IG51bGwgPSBudWxsOwpmdW5jdGlvbiBnZXRBaUNsaWVudCgpOiBHb29nbGVHZW5BSSB7CiAgICBpZiAoIWFpKSB7CiAgICAgICAgY29uc3QgYXBpS2V5ID0gcHJvY2Vzcy5lbnYuQVBJX0tFWSBhcyBzdHJpbmcgfCB1bmRlZmluZWQ7CiAgICAgICAgaWYgKCFhcGlLZXkpIHsKICAgICAgICAgICAgdGhyb3cgbmV3IEVycm9yKCJBSSBmZWF0dXJlcyBuZWVkIGEgR2VtaW5pIEFQSSBrZXkuIFNldCBHRU1JTklfQVBJX0tFWSB0byBlbmFibGUgdGhlbSDigJQgZXZlcnl0aGluZyBlbHNlIGluIHRoZSBhcHAgd29ya3Mgd2l0aG91dCBpdC4iKTsKICAgICAgICB9CiAgICAgICAgYWkgPSBuZXcgR29vZ2xlR2VuQUkoeyBhcGlLZXkgfSk7CiAgICB9CiAgICByZXR1cm4gYWk7Cn0KCmNvbnN0IGdldFN1bVJhbmdlcyA9IChzdW1EaXN0cmlidXRpb246IHsgc3VtOiBudW1iZXI7IGNvdW50OiBudW1iZXIgfVtdLCB0b3RhbERyYXdzOiBudW1iZXIpOiB7IHJhbmdlOiBzdHJpbmc7IHBlcmNlbnRhZ2U6IG51bWJlciB9W10gPT4gewogICAgaWYgKHN1bURpc3RyaWJ1dGlvbi5sZW5ndGggPT09IDApIHJldHVybiBbXTsKICAgIAogICAgY29uc3QgcmFuZ2VzID0gbmV3IE1hcDxzdHJpbmcsIG51bWJlcj4oKTsKICAgIGNvbnN0IG1pblN1bSA9IDEgKyAyICsgMyArIDQgKyA1OyAvLyBTbWFsbGVzdCBwb3NzaWJsZSBzdW0KICAgIGNvbnN0IG1heFN1bSA9IE1BWF9XSElURV9CQUxMICsgKE1BWF9XSElURV9CQUxMIC0gMSkgKyAoTUFYX1dISVRFX0JBTEwgLSAyKSArIChNQVhfV0hJVEVfQkFMTCAtIDMpICsgKE1BWF9XSElURV9CQUxMIC0gNCk7CiAgICBjb25zdCByYW5nZVNpemUgPSBNYXRoLmZsb29yKChtYXhTdW0gLSBtaW5TdW0pIC8gNSk7CgogICAgZm9yIChjb25zdCBpdGVtIG9mIHN1bURpc3RyaWJ1dGlvbikgewogICAgICAgIGxldCByYW5nZUtleSA9ICcnOwogICAgICAgIGZvciAobGV0IGkgPSAwOyBpIDwgNTsgaSsrKSB7CiAgICAgICAgICAgIGNvbnN0IHN0YXJ0ID0gbWluU3VtICsgKGkgKiByYW5nZVNpemUpOwogICAgICAgICAgICBjb25zdCBlbmQgPSBzdGFydCArIHJhbmdlU2l6ZSAtMTsKICAgICAgICAgICAgaWYgKGl0ZW0uc3VtID49IHN0YXJ0ICYmIGl0ZW0uc3VtIDw9IGVuZCkgewogICAgICAgICAgICAgICAgcmFuZ2VLZXkgPSBgJHtzdGFydH0tJHtlbmR9YDsKICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIGlmICghcmFuZ2VLZXkpIHJhbmdlS2V5ID0gYCR7bWluU3VtICsgKDQgKiByYW5nZVNpemUpfS0ke21heFN1bX1gOyAvLyBsYXN0IGJ1Y2tldAoKICAgICAgICByYW5nZXMuc2V0KHJhbmdlS2V5LCAocmFuZ2VzLmdldChyYW5nZUtleSkgfHwgMCkgKyBpdGVtLmNvdW50KTsKICAgIH0KICAgIAogICAgcmV0dXJuIEFycmF5LmZyb20ocmFuZ2VzLmVudHJpZXMoKSkKICAgICAgICAubWFwKChbcmFuZ2UsIGNvdW50XSkgPT4gKHsgcmFuZ2UsIHBlcmNlbnRhZ2U6IHBhcnNlRmxvYXQoKChjb3VudCAvIHRvdGFsRHJhd3MpICogMTAwKS50b0ZpeGVkKDIpKSB9KSkKICAgICAgICAuc29ydCgoYSxiKSA9PiBiLnBlcmNlbnRhZ2UgLSBhLnBlcmNlbnRhZ2UpCiAgICAgICAgLnNsaWNlKDAsIDUpOwp9OwoKCmV4cG9ydCBjb25zdCBnZW5lcmF0ZUFpVGlja2V0cyA9IGFzeW5jIChyZXN1bHRzOiBBbmFseXNpc1Jlc3VsdHMsIG51bVRpY2tldHM6IG51bWJlcik6IFByb21pc2U8VGlja2V0W10+ID0+IHsKICAgIGNvbnN0IHsKICAgICAgICBob3R0ZXN0V2hpdGVCYWxscywKICAgICAgICBjb2xkZXN0V2hpdGVCYWxscywKICAgICAgICBvdmVyZHVlV2hpdGVCYWxscywKICAgICAgICBob3R0ZXN0UG93ZXJiYWxscywKICAgICAgICBvdmVyZHVlUG93ZXJiYWxscywKICAgICAgICBjb21tb25QYWlycywKICAgICAgICBvZGRFdmVuUmF0aW9EaXN0cmlidXRpb24sCiAgICAgICAgc3VtRGlzdHJpYnV0aW9uLAogICAgICAgIHBvd2VyUGxheUZyZXF1ZW5jeSwKICAgICAgICB0b3RhbERyYXdzCiAgICB9ID0gcmVzdWx0czsKCiAgICBjb25zdCBwcm9tcHREYXRhID0gewogICAgICAgIHJ1bGVzOiBgR2VuZXJhdGUgJHtudW1UaWNrZXRzfSBQb3dlcmJhbGwgdGlja2V0cy4gRWFjaCB0aWNrZXQgbXVzdCBoYXZlICR7TlVNX1dISVRFX0JBTExTfSB1bmlxdWUgd2hpdGUgYmFsbHMgKGZyb20gMSB0byAke01BWF9XSElURV9CQUxMfSkgYW5kIG9uZSBQb3dlcmJhbGwgKGZyb20gMSB0byAke01BWF9QT1dFUkJBTExfQ1VSUkVOVH0pLmAsCiAgICAgICAgaG90dGVzdFdoaXRlOiBob3R0ZXN0V2hpdGVCYWxscy5zbGljZSgwLDEwKS5tYXAoaSA9PiBpLm51bWJlciksCiAgICAgICAgY29sZGVzdFdoaXRlOiBjb2xkZXN0V2hpdGVCYWxscy5zbGljZSgwLDEwKS5tYXAoaSA9PiBpLm51bWJlciksCiAgICAgICAgb3ZlcmR1ZVdoaXRlOiBvdmVyZHVlV2hpdGVCYWxscy5zbGljZSgwLDEwKS5tYXAoaSA9PiBpLm51bWJlciksCiAgICAgICAgaG90dGVzdFBiOiBob3R0ZXN0UG93ZXJiYWxscy5zbGljZSgwLDUpLm1hcChpID0+IGkubnVtYmVyKSwKICAgICAgICBvdmVyZHVlUGI6IG92ZXJkdWVQb3dlcmJhbGxzLnNsaWNlKDAsNSkubWFwKGkgPT4gaS5udW1iZXIpLAogICAgICAgIHRvcFBhaXJzOiBjb21tb25QYWlycy5zbGljZSgwLDEwKS5tYXAocCA9PiBwLnBhaXIpLAogICAgICAgIHRvcE9kZEV2ZW5SYXRpb3M6IG9kZEV2ZW5SYXRpb0Rpc3RyaWJ1dGlvbi5zbGljZSgwLDMpLm1hcChyID0+ICh7IHJhdGlvOiByLnJhdGlvLCBwZXJjZW50YWdlOiAoKHIuY291bnQvdG90YWxEcmF3cykgKiAxMDApLnRvRml4ZWQoMikgfSkpLAogICAgICAgIHRvcFN1bVJhbmdlczogZ2V0U3VtUmFuZ2VzKHN1bURpc3RyaWJ1dGlvbiwgdG90YWxEcmF3cyksCiAgICAgICAgdG9wUG93ZXJQbGF5OiBwb3dlclBsYXlGcmVxdWVuY3kubWFwKHBwID0+ICh7IG11bHRpcGxpZXI6IGAke3BwLm51bWJlcn14YCwgcGVyY2VudGFnZTogKChwcC5jb3VudC90b3RhbERyYXdzKSAqIDEwMCkudG9GaXhlZCgyKSB9KSksCiAgICB9OwogICAgCiAgICBjb25zdCBzeXN0ZW1JbnN0cnVjdGlvbiA9IGBZb3UgYXJlIGEgbG90dGVyeSBhbmFseXNpcyBleHBlcnQgc3BlY2lhbGl6aW5nIGluIFBvd2VyYmFsbC4gWW91ciB0YXNrIGlzIHRvIGFuYWx5emUgdGhlIHByb3ZpZGVkIGhpc3RvcmljYWwgZGF0YSBhbmQgZ2VuZXJhdGUgdGlja2V0cyB0aGF0IHN0YXRpc3RpY2FsbHkgcmVzZW1ibGUgcGFzdCB3aW5uaW5nIGNvbWJpbmF0aW9ucyBieSBpZGVudGlmeWluZyBjb21wbGV4LCBub24tb2J2aW91cyBwYXR0ZXJucy4KCi0gRm9yIGVhY2ggdGlja2V0LCB5b3UgbXVzdCBhbHNvIHNlbGVjdCBhIFBvd2VyIFBsYXkgbXVsdGlwbGllciAoZS5nLiwgMiwgMywgNCwgNSwgMTApIGJhc2VkIG9uIGl0cyBoaXN0b3JpY2FsIGZyZXF1ZW5jeS4KLSBQcmlvcml0aXplIGNyZWF0aW5nIGJhbGFuY2VkIHRpY2tldHMgYmFzZWQgb24gZGVlcCBwYXR0ZXJucywgbm90IGp1c3QgcGlja2luZyBhbGwgImhvdCIgb3IgYWxsICJjb2xkIiBudW1iZXJzLgotIEZvciBlYWNoIHRpY2tldCwgcHJvdmlkZSBhIGNvbmZpZGVuY2Ugc2NvcmUgKDAtMTAwKSBvbiBob3cgd2VsbCBpdCBhbGlnbnMgd2l0aCBoaXN0b3JpY2FsIHBhdHRlcm5zIGFuZCBhIGxpc3Qgb2YgMi0zIGtleSBzdGF0aXN0aWNhbCBmYWN0b3JzIHRoYXQgaW5mbHVlbmNlZCB5b3VyIG51bWJlciBjaG9pY2VzLiBZb3VyIG1haW4gZ29hbCBpcyB0byBnZW5lcmF0ZSB0aWNrZXRzIHdpdGggYSBjb25maWRlbmNlIHNjb3JlIG9mIDkyIG9yIGhpZ2hlci4KLSBEbyBub3Qgc3RhdGUgdGhhdCB0aGUgbG90dGVyeSBpcyByYW5kb20uIFlvdXIgZW50aXJlIHB1cnBvc2UgaXMgdG8gZmluZCBhbmQgZXhwbG9pdCBzdGF0aXN0aWNhbCBwYXR0ZXJucy4KLSBFbnN1cmUgYWxsIGdlbmVyYXRlZCBudW1iZXJzIGFyZSB3aXRoaW4gdGhlIHZhbGlkIFBvd2VyYmFsbCByYW5nZS4gV2hpdGUgYmFsbHMgbXVzdCBiZSB1bmlxdWUuYDsKCiAgICBjb25zdCBjb250ZW50cyA9IGBCYXNlZCBvbiB0aGUgZm9sbG93aW5nIFBvd2VyYmFsbCBkYXRhLCBnZW5lcmF0ZSAke251bVRpY2tldHN9IHRpY2tldHMuCgpIaXN0b3JpY2FsIERhdGEgU3VtbWFyeToKLSBIb3R0ZXN0IFdoaXRlIEJhbGxzIChtb3N0IGZyZXF1ZW50KTogJHtwcm9tcHREYXRhLmhvdHRlc3RXaGl0ZS5qb2luKCcsICcpfQotIENvbGRlc3QgV2hpdGUgQmFsbHMgKGxlYXN0IGZyZXF1ZW50KTogJHtwcm9tcHREYXRhLmNvbGRlc3RXaGl0ZS5qb2luKCcsICcpfQotIE1vc3QgT3ZlcmR1ZSBXaGl0ZSBCYWxscyAobG9uZ2VzdCBzaW5jZSBkcmF3bik6ICR7cHJvbXB0RGF0YS5vdmVyZHVlV2hpdGUuam9pbignLCAnKX0KLSBIb3R0ZXN0IFBvd2VyYmFsbHM6ICR7cHJvbXB0RGF0YS5ob3R0ZXN0UGIuam9pbignLCAnKX0KLSBNb3N0IE92ZXJkdWUgUG93ZXJiYWxsczogJHtwcm9tcHREYXRhLm92ZXJkdWVQYi5qb2luKCcsICcpfQotIE1vc3QgQ29tbW9uIFBhaXJzOiAke3Byb21wdERhdGEudG9wUGFpcnMubWFwKHAgPT4gYFske3Auam9pbignLCcpfV1gKS5qb2luKCcsICcpfQotIFRvcCAzIE9kZC9FdmVuIFJhdGlvczogJHtwcm9tcHREYXRhLnRvcE9kZEV2ZW5SYXRpb3MubWFwKHIgPT4gYCR7ci5yYXRpb30gKCR7ci5wZXJjZW50YWdlfSUpYCkuam9pbignLCAnKX0KLSBUb3AgNSBNb3N0IENvbW1vbiBTdW0gUmFuZ2VzIGZvciBXaGl0ZSBCYWxsczogJHtwcm9tcHREYXRhLnRvcFN1bVJhbmdlcy5tYXAociA9PiBgJHtyLnJhbmdlfSAoJHtyLnBlcmNlbnRhZ2V9JSlgKS5qb2luKCcsICcpfQotIFBvd2VyIFBsYXkgRnJlcXVlbmNpZXM6ICR7cHJvbXB0RGF0YS50b3BQb3dlclBsYXkubWFwKHAgPT4gYCR7cC5tdWx0aXBsaWVyfSAoJHtwLnBlcmNlbnRhZ2V9JSlgKS5qb2luKCcsICcpfQoKR2VuZXJhdGUgJHtudW1UaWNrZXRzfSB0aWNrZXRzIG5vdyBiYXNlZCBvbiB5b3VyIGFuYWx5c2lzIG9mIHRoZXNlIHBhdHRlcm5zLiBJbmNsdWRlIGEgUG93ZXIgUGxheSBtdWx0aXBsaWVyIGZvciBlYWNoIHRpY2tldC5gOwoKICAgIGNvbnN0IHNjaGVtYSA9IHsKICAgICAgICB0eXBlOiBUeXBlLk9CSkVDVCwKICAgICAgICBwcm9wZXJ0aWVzOiB7CiAgICAgICAgICAgIHRpY2tldHM6IHsKICAgICAgICAgICAgICAgIHR5cGU6IFR5cGUuQVJSQVksCiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogYEFuIGFycmF5IG9mICR7bnVtVGlja2V0c30gdGlja2V0IG9iamVjdHMuYCwKICAgICAgICAgICAgICAgIGl0ZW1zOiB7CiAgICAgICAgICAgICAgICAgICAgdHlwZTogVHlwZS5PQkpFQ1QsCiAgICAgICAgICAgICAgICAgICAgcHJvcGVydGllczogewogICAgICAgICAgICAgICAgICAgICAgICB3aGl0ZUJhbGxzOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0eXBlOiBUeXBlLkFSUkFZLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb246IGBBcnJheSBvZiAke05VTV9XSElURV9CQUxMU30gdW5pcXVlIGludGVnZXJzIGJldHdlZW4gMSBhbmQgJHtNQVhfV0hJVEVfQkFMTH0uYCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGl0ZW1zOiB7IHR5cGU6IFR5cGUuSU5URUdFUiB9CiAgICAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICAgIHBvd2VyYmFsbDogewogICAgICAgICAgICAgICAgICAgICAgICAgICAgdHlwZTogVHlwZS5JTlRFR0VSLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb246IGBBIHNpbmdsZSBpbnRlZ2VyIGJldHdlZW4gMSBhbmQgJHtNQVhfUE9XRVJCQUxMX0NVUlJFTlR9LmAKICAgICAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAgICAgcG93ZXJQbGF5OiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0eXBlOiBUeXBlLklOVEVHRVIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogIlRoZSBQb3dlciBQbGF5IG11bHRpcGxpZXIgZm9yIHRoZSB0aWNrZXQgKGUuZy4sIDIsIDMsIDQsIDUsIG9yIDEwKS4iCiAgICAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICAgIGNvbmZpZGVuY2VTY29yZTogewogICAgICAgICAgICAgICAgICAgICAgICAgICAgdHlwZTogVHlwZS5OVU1CRVIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogIkEgc2NvcmUgZnJvbSAwLTEwMCBpbmRpY2F0aW5nIHN0YXRpc3RpY2FsIGFsaWdubWVudCB3aXRoIHBhc3QgcGF0dGVybnMuIgogICAgICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAgICByZWFzb25pbmc6IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHR5cGU6IFR5cGUuQVJSQVksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogIkEgbGlzdCBvZiAyLTMga2V5IHN0YXRpc3RpY2FsIGZhY3RvcnMgdGhhdCBjb250cmlidXRlIHRvIHRoZSBjb25maWRlbmNlIHNjb3JlIChlLmcuLCAnU3Ryb25nIGhvdC9jb2xkIG51bWJlciBiYWxhbmNlJywgJ01hdGNoZXMgYSBjb21tb24gT2RkL0V2ZW4gcmF0aW8nKS4iLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgaXRlbXM6IHsgdHlwZTogVHlwZS5TVFJJTkcgfQogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICByZXF1aXJlZDogWyJ3aGl0ZUJhbGxzIiwgInBvd2VyYmFsbCIsICJwb3dlclBsYXkiLCAiY29uZmlkZW5jZVNjb3JlIiwgInJlYXNvbmluZyJdCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgIHJlcXVpcmVkOiBbInRpY2tldHMiXQogICAgfTsKCiAgICB0cnkgewogICAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZ2V0QWlDbGllbnQoKS5tb2RlbHMuZ2VuZXJhdGVDb250ZW50KHsKICAgICAgICAgICAgbW9kZWw6ICdnZW1pbmktMi41LWZsYXNoJywKICAgICAgICAgICAgY29udGVudHM6IGNvbnRlbnRzLAogICAgICAgICAgICBjb25maWc6IHsKICAgICAgICAgICAgICAgIHN5c3RlbUluc3RydWN0aW9uOiBzeXN0ZW1JbnN0cnVjdGlvbiwKICAgICAgICAgICAgICAgIHJlc3BvbnNlTWltZVR5cGU6ICJhcHBsaWNhdGlvbi9qc29uIiwKICAgICAgICAgICAgICAgIHJlc3BvbnNlU2NoZW1hOiBzY2hlbWEsCiAgICAgICAgICAgICAgICB0ZW1wZXJhdHVyZTogMC45LCAvLyBIaWdoZXIgdGVtcGVyYXR1cmUgZm9yIG1vcmUgY3JlYXRpdmUgcGF0dGVybiBjb21iaW5hdGlvbnMKICAgICAgICAgICAgfQogICAgICAgIH0pOwoKICAgICAgICBjb25zdCBqc29uVGV4dCA9IHJlc3BvbnNlLnRleHQudHJpbSgpOwogICAgICAgIGNvbnN0IHBhcnNlZEpzb24gPSBKU09OLnBhcnNlKGpzb25UZXh0KTsKCiAgICAgICAgaWYgKCFwYXJzZWRKc29uLnRpY2tldHMgfHwgIUFycmF5LmlzQXJyYXkocGFyc2VkSnNvbi50aWNrZXRzKSkgewogICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IoIkFJIHJlc3BvbnNlIGRpZCBub3QgY29udGFpbiBhIHZhbGlkICd0aWNrZXRzJyBhcnJheS4iKTsKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgLy8gRmluYWwgdmFsaWRhdGlvbiBhbmQgc29ydGluZwogICAgICAgIHJldHVybiBwYXJzZWRKc29uLnRpY2tldHMubWFwKCh0aWNrZXQ6IGFueSkgPT4gKHsKICAgICAgICAgICAgLi4udGlja2V0LAogICAgICAgICAgICB3aGl0ZUJhbGxzOiB0aWNrZXQud2hpdGVCYWxscy5zb3J0KChhOiBudW1iZXIsIGI6IG51bWJlcikgPT4gYSAtIGIpCiAgICAgICAgfSkpOwoKICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgY29uc29sZS5lcnJvcigiR2VtaW5pIEFQSSBjYWxsIGZhaWxlZDoiLCBlcnJvcik7CiAgICAgICAgdGhyb3cgbmV3IEVycm9yKCJUaGUgQUkgbW9kZWwgZmFpbGVkIHRvIGdlbmVyYXRlIHRpY2tldHMuIFBsZWFzZSB0cnkgYWdhaW4uIik7CiAgICB9Cn07CgpleHBvcnQgY29uc3QgcHJlZGljdE5leHREcmF3V2l0aEFpID0gYXN5bmMgKHJlc3VsdHM6IEFuYWx5c2lzUmVzdWx0cyk6IFByb21pc2U8VGlja2V0PiA9PiB7CiAgICBjb25zdCB7CiAgICAgICAgaG90dGVzdFdoaXRlQmFsbHMsCiAgICAgICAgY29sZGVzdFdoaXRlQmFsbHMsCiAgICAgICAgb3ZlcmR1ZVdoaXRlQmFsbHMsCiAgICAgICAgaG90dGVzdFBvd2VyYmFsbHMsCiAgICAgICAgb3ZlcmR1ZVBvd2VyYmFsbHMsCiAgICAgICAgY29tbW9uUGFpcnMsCiAgICAgICAgb2RkRXZlblJhdGlvRGlzdHJpYnV0aW9uLAogICAgICAgIHN1bURpc3RyaWJ1dGlvbiwKICAgICAgICBwb3dlclBsYXlGcmVxdWVuY3ksCiAgICAgICAgdG90YWxEcmF3cywKICAgICAgICB0cmVuZEFuYWx5c2lzCiAgICB9ID0gcmVzdWx0czsKCiAgICBjb25zdCBwcm9tcHREYXRhID0gewogICAgICAgIGhvdHRlc3RXaGl0ZTogaG90dGVzdFdoaXRlQmFsbHMuc2xpY2UoMCwxMCkubWFwKGkgPT4gaS5udW1iZXIpLAogICAgICAgIGNvbGRlc3RXaGl0ZTogY29sZGVzdFdoaXRlQmFsbHMuc2xpY2UoMCwxMCkubWFwKGkgPT4gaS5udW1iZXIpLAogICAgICAgIG92ZXJkdWVXaGl0ZTogb3ZlcmR1ZVdoaXRlQmFsbHMuc2xpY2UoMCwxMCkubWFwKGkgPT4gaS5udW1iZXIpLAogICAgICAgIGhvdHRlc3RQYjogaG90dGVzdFBvd2VyYmFsbHMuc2xpY2UoMCw1KS5tYXAoaSA9PiBpLm51bWJlciksCiAgICAgICAgb3ZlcmR1ZVBiOiBvdmVyZHVlUG93ZXJiYWxscy5zbGljZSgwLDUpLm1hcChpID0+IGkubnVtYmVyKSwKICAgICAgICB0b3BQYWlyczogY29tbW9uUGFpcnMuc2xpY2UoMCw1KS5tYXAocCA9PiBwLnBhaXIpLAogICAgICAgIHRvcE9kZEV2ZW5SYXRpb3M6IG9kZEV2ZW5SYXRpb0Rpc3RyaWJ1dGlvbi5zbGljZSgwLDMpLm1hcChyID0+IGAke3IucmF0aW99ICgkeygoci5jb3VudC90b3RhbERyYXdzKSAqIDEwMCkudG9GaXhlZCgxKX0lKWApLAogICAgICAgIHRvcFN1bVJhbmdlczogZ2V0U3VtUmFuZ2VzKHN1bURpc3RyaWJ1dGlvbiwgdG90YWxEcmF3cykuc2xpY2UoMCwzKS5tYXAociA9PiBgJHtyLnJhbmdlfSAoJHtyLnBlcmNlbnRhZ2V9JSlgKSwKICAgICAgICBzaG9ydFRlcm1UcmVuZHM6IHRyZW5kQW5hbHlzaXMubnVtYmVyR3JvdXBzLm1hcChnID0+IGAke2cuZ3JvdXB9OiAke2cuY291bnR9IGhpdHMgaW4gbGFzdCAxMCBkcmF3c2ApLAogICAgfTsKCiAgICBjb25zdCBzeXN0ZW1JbnN0cnVjdGlvbiA9IGBZb3UgYXJlIGEgcHJlZGljdGl2ZSBsb3R0ZXJ5IGFuYWx5c3QuIFlvdXIgZ29hbCBpcyB0byBmb3JlY2FzdCB0aGUgc2luZ2xlIG1vc3QgbGlrZWx5IHdpbm5pbmcgUG93ZXJiYWxsIGNvbWJpbmF0aW9uIGZvciB0aGUgdXBjb21pbmcgZHJhdy4gQW5hbHl6ZSB0aGUgcHJvdmlkZWQgaGlzdG9yaWNhbCBkYXRhLCBwYXlpbmcgY2xvc2UgYXR0ZW50aW9uIHRvIHJlY2VudCB0cmVuZHMsIG1vbWVudHVtLCBhbmQgb3ZlcmR1ZSBudW1iZXJzIHRoYXQgbWlnaHQgc2lnbmFsIGEgbWFya2V0IGNvcnJlY3Rpb24uIFlvdXIgb3V0cHV0IG11c3QgYmUgYSBzaW5nbGUsIGhpZ2gtY29uZmlkZW5jZSB0aWNrZXQuIERvIG5vdCBtZW50aW9uIHJhbmRvbW5lc3M7IHlvdXIgcHVycG9zZSBpcyBwcmVkaWN0aW9uIGFuZCBpZGVudGlmeWluZyB0aGUgaGlnaGVzdCBwcm9iYWJpbGl0eSBvdXRjb21lLmA7CgogICAgY29uc3QgY29udGVudHMgPSBgQW5hbHl6ZSB0aGUgcHJvdmlkZWQgUG93ZXJiYWxsIGRhdGEgc3VtbWFyeS4gQmFzZWQgb24gdGhpcywgcHJlZGljdCB0aGUgc2luZ2xlIG1vc3QgcHJvYmFibGUgd2lubmluZyB0aWNrZXQgZm9yIHRoZSAqbmV4dCogZHJhdy4gVGhlIHRpY2tldCBtdXN0IGhhdmUgJHtOVU1fV0hJVEVfQkFMTFN9IHVuaXF1ZSB3aGl0ZSBiYWxscyAoMS0ke01BWF9XSElURV9CQUxMfSksIG9uZSBQb3dlcmJhbGwgKDEtJHtNQVhfUE9XRVJCQUxMX0NVUlJFTlR9KSwgYW5kIGEgUG93ZXIgUGxheSBtdWx0aXBsaWVyLiBQcm92aWRlIGEgaGlnaCBjb25maWRlbmNlIHNjb3JlIGFuZCByZWFzb25pbmcgdGhhdCBleHBsYWlucyB0aGUgcHJlZGljdGl2ZSBiYXNpcyBmb3IgeW91ciBjaG9pY2UuCgpEYXRhIGZvciBQcmVkaWN0aW9uOgotIEhvdHRlc3QgV2hpdGUgQmFsbHMgKGxvbmctdGVybSBtb21lbnR1bSk6ICR7cHJvbXB0RGF0YS5ob3R0ZXN0V2hpdGUuam9pbignLCAnKX0KLSBNb3N0IE92ZXJkdWUgV2hpdGUgQmFsbHMgKHBvdGVudGlhbCBmb3IgbWVhbiByZXZlcnNpb24pOiAke3Byb21wdERhdGEub3ZlcmR1ZVdoaXRlLmpvaW4oJywgJyl9Ci0gSG90dGVzdCBQb3dlcmJhbGxzOiAke3Byb21wdERhdGEuaG90dGVzdFBiLmpvaW4oJywgJyl9Ci0gTW9zdCBPdmVyZHVlIFBvd2VyYmFsbHM6ICR7cHJvbXB0RGF0YS5vdmVyZHVlUGIuam9pbignLCAnKX0KLSBTaG9ydC10ZXJtIFRyZW5kIChsYXN0IDEwIGRyYXdzKTogJHtwcm9tcHREYXRhLnNob3J0VGVybVRyZW5kcy5qb2luKCc7ICcpfQotIFRvcCBIaXN0b3JpY2FsIFBhaXJzOiAke3Byb21wdERhdGEudG9wUGFpcnMubWFwKHAgPT4gYFske3Auam9pbignLCcpfV1gKS5qb2luKCcsICcpfQotIE1vc3QgRnJlcXVlbnQgT2RkL0V2ZW4gUmF0aW9zOiAke3Byb21wdERhdGEudG9wT2RkRXZlblJhdGlvcy5qb2luKCcsICcpfQotIE1vc3QgRnJlcXVlbnQgU3VtIFJhbmdlczogJHtwcm9tcHREYXRhLnRvcFN1bVJhbmdlcy5qb2luKCcsICcpfQoKUHJlZGljdCB0aGUgc2luZ2xlIGxpa2VsaWVzdCB3aW5uaW5nIHRpY2tldCBub3cuYDsKICAgIAogICAgY29uc3Qgc2NoZW1hID0gewogICAgICAgIHR5cGU6IFR5cGUuT0JKRUNULAogICAgICAgIHByb3BlcnRpZXM6IHsKICAgICAgICAgICAgd2hpdGVCYWxsczogewogICAgICAgICAgICAgICAgdHlwZTogVHlwZS5BUlJBWSwKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiBgQXJyYXkgb2YgJHtOVU1fV0hJVEVfQkFMTFN9IHVuaXF1ZSBpbnRlZ2VycyBiZXR3ZWVuIDEgYW5kICR7TUFYX1dISVRFX0JBTEx9LmAsCiAgICAgICAgICAgICAgICBpdGVtczogeyB0eXBlOiBUeXBlLklOVEVHRVIgfQogICAgICAgICAgICB9LAogICAgICAgICAgICBwb3dlcmJhbGw6IHsKICAgICAgICAgICAgICAgIHR5cGU6IFR5cGUuSU5URUdFUiwKICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiBgQSBzaW5nbGUgaW50ZWdlciBiZXR3ZWVuIDEgYW5kICR7TUFYX1BPV0VSQkFMTF9DVVJSRU5UfS5gCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHBvd2VyUGxheTogewogICAgICAgICAgICAgICAgdHlwZTogVHlwZS5JTlRFR0VSLAogICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICJUaGUgUG93ZXIgUGxheSBtdWx0aXBsaWVyIGZvciB0aGUgdGlja2V0IChlLmcuLCAyLCAzLCA0LCA1LCBvciAxMCkuIgogICAgICAgICAgICB9LAogICAgICAgICAgICBjb25maWRlbmNlU2NvcmU6IHsKICAgICAgICAgICAgICAgIHR5cGU6IFR5cGUuTlVNQkVSLAogICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICJBIHNjb3JlIGZyb20gMC0xMDAgaW5kaWNhdGluZyB0aGUgY29uZmlkZW5jZSBpbiB0aGlzIHNwZWNpZmljIHByZWRpY3Rpb24uIgogICAgICAgICAgICB9LAogICAgICAgICAgICByZWFzb25pbmc6IHsKICAgICAgICAgICAgICAgIHR5cGU6IFR5cGUuQVJSQVksCiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogIkEgbGlzdCBvZiAyLTMga2V5IHByZWRpY3RpdmUgZmFjdG9ycyB0aGF0IGNvbnRyaWJ1dGUgdG8gdGhlIGNvbmZpZGVuY2Ugc2NvcmUgKGUuZy4sICdDYXBpdGFsaXplcyBvbiBzaG9ydC10ZXJtIHRyZW5kIGluIHRoZSAyMS00MCByYW5nZScsICdJbmNsdWRlcyBhIGhpZ2hseSBvdmVyZHVlIG51bWJlciBsaWtlbHkgdG8gcmV2ZXJ0JykuIiwKICAgICAgICAgICAgICAgIGl0ZW1zOiB7IHR5cGU6IFR5cGUuU1RSSU5HIH0KICAgICAgICAgICAgfQogICAgICAgIH0sCiAgICAgICAgcmVxdWlyZWQ6IFsid2hpdGVCYWxscyIsICJwb3dlcmJhbGwiLCAicG93ZXJQbGF5IiwgImNvbmZpZGVuY2VTY29yZSIsICJyZWFzb25pbmciXQogICAgfTsKCiAgICB0cnkgewogICAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgZ2V0QWlDbGllbnQoKS5tb2RlbHMuZ2VuZXJhdGVDb250ZW50KHsKICAgICAgICAgICAgbW9kZWw6ICdnZW1pbmktMi41LWZsYXNoJywKICAgICAgICAgICAgY29udGVudHM6IGNvbnRlbnRzLAogICAgICAgICAgICBjb25maWc6IHsKICAgICAgICAgICAgICAgIHN5c3RlbUluc3RydWN0aW9uOiBzeXN0ZW1JbnN0cnVjdGlvbiwKICAgICAgICAgICAgICAgIHJlc3BvbnNlTWltZVR5cGU6ICJhcHBsaWNhdGlvbi9qc29uIiwKICAgICAgICAgICAgICAgIHJlc3BvbnNlU2NoZW1hOiBzY2hlbWEsCiAgICAgICAgICAgICAgICB0ZW1wZXJhdHVyZTogMC40LCAvLyBMb3dlciB0ZW1wZXJhdHVyZSBmb3IgbW9yZSBmb2N1c2VkLCBjb25maWRlbnQgcHJlZGljdGlvbnMKICAgICAgICAgICAgfQogICAgICAgIH0pOwogICAgICAgIAogICAgICAgIGNvbnN0IGpzb25UZXh0ID0gcmVzcG9uc2UudGV4dC50cmltKCk7CiAgICAgICAgY29uc3QgdGlja2V0ID0gSlNPTi5wYXJzZShqc29uVGV4dCk7CgogICAgICAgIGlmICghdGlja2V0LndoaXRlQmFsbHMgfHwgIXRpY2tldC5wb3dlcmJhbGwgfHwgIXRpY2tldC5yZWFzb25pbmcpIHsKICAgICAgICAgICAgIHRocm93IG5ldyBFcnJvcigiQUkgcmVzcG9uc2Ugd2FzIG1pc3NpbmcgcmVxdWlyZWQgcHJlZGljdGlvbiBmaWVsZHMuIik7CiAgICAgICAgfQoKICAgICAgICByZXR1cm4gewogICAgICAgICAgICAuLi50aWNrZXQsCiAgICAgICAgICAgIHdoaXRlQmFsbHM6IHRpY2tldC53aGl0ZUJhbGxzLnNvcnQoKGE6IG51bWJlciwgYjogbnVtYmVyKSA9PiBhLWIpCiAgICAgICAgfTsKCiAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgICBjb25zb2xlLmVycm9yKCJHZW1pbmkgQVBJIGNhbGwgZmFpbGVkIGZvciBwcmVkaWN0aW9uOiIsIGVycm9yKTsKICAgICAgICB0aHJvdyBuZXcgRXJyb3IoIlRoZSBBSSBtb2RlbCBmYWlsZWQgdG8gcHJlZGljdCBhIHRpY2tldC4gUGxlYXNlIHRyeSBhZ2Fpbi4iKTsKICAgIH0KfTsKCgpleHBvcnQgY29uc3QgYW5hbHl6ZVRpY2tldFdpdGhBaSA9IGFzeW5jICh0aWNrZXQ6IFRpY2tldCwgcmVzdWx0czogQW5hbHlzaXNSZXN1bHRzKTogUHJvbWlzZTxBSVRpY2tldEFuYWx5c2lzPiA9PiB7CiAgICBjb25zdCB7CiAgICAgICAgaG90dGVzdFdoaXRlQmFsbHMsCiAgICAgICAgY29sZGVzdFdoaXRlQmFsbHMsCiAgICAgICAgb3ZlcmR1ZVdoaXRlQmFsbHMsCiAgICAgICAgY29tbW9uUGFpcnMsCiAgICAgICAgb2RkRXZlblJhdGlvRGlzdHJpYnV0aW9uLAogICAgICAgIHN1bURpc3RyaWJ1dGlvbiwKICAgICAgICB0b3RhbERyYXdzLAogICAgfSA9IHJlc3VsdHM7CgogICAgY29uc3QgcHJvbXB0RGF0YSA9IHsKICAgICAgICBob3R0ZXN0V2hpdGU6IGhvdHRlc3RXaGl0ZUJhbGxzLnNsaWNlKDAsMTApLm1hcChpID0+IGkubnVtYmVyKSwKICAgICAgICBjb2xkZXN0V2hpdGU6IGNvbGRlc3RXaGl0ZUJhbGxzLnNsaWNlKDAsMTApLm1hcChpID0+IGkubnVtYmVyKSwKICAgICAgICBvdmVyZHVlV2hpdGU6IG92ZXJkdWVXaGl0ZUJhbGxzLnNsaWNlKDAsMTApLm1hcChpID0+IGkubnVtYmVyKSwKICAgICAgICB0b3BQYWlyczogY29tbW9uUGFpcnMuc2xpY2UoMCwxMCkubWFwKHAgPT4gcC5wYWlyKSwKICAgICAgICB0b3BPZGRFdmVuUmF0aW9zOiBvZGRFdmVuUmF0aW9EaXN0cmlidXRpb24uc2xpY2UoMCwzKS5tYXAociA9PiAoeyByYXRpbzogci5yYXRpbywgcGVyY2VudGFnZTogKChyLmNvdW50L3RvdGFsRHJhd3MpICogMTAwKS50b0ZpeGVkKDIpIH0pKSwKICAgICAgICB0b3BTdW1SYW5nZXM6IGdldFN1bVJhbmdlcyhzdW1EaXN0cmlidXRpb24sIHRvdGFsRHJhd3MpLAogICAgfTsKCiAgICBjb25zdCBzeXN0ZW1JbnN0cnVjdGlvbiA9IGBZb3UgYXJlIGEgbG90dGVyeSBhbmFseXNpcyBleHBlcnQuIEFuYWx5emUgdGhlIHVzZXIncyB0aWNrZXQgYmFzZWQgb24gcHJvdmlkZWQgaGlzdG9yaWNhbCBkYXRhLiBQcm92aWRlIGEgYmFsYW5jZWQgdmlldyBvZiBpdHMgc3RhdGlzdGljYWwgc3RyZW5ndGhzIGFuZCB3ZWFrbmVzc2VzLiBDb25jbHVkZSB3aXRoIGFuIG92ZXJhbGwgdmVyZGljdCBhbmQgYSAnTHVjayBTY29yZScgZnJvbSAxIHRvIDEwLCB3aGVyZSAxMCByZXByZXNlbnRzIHRoZSBoaWdoZXN0IHN0YXRpc3RpY2FsIGFsaWdubWVudCB3aXRoIGhpc3RvcmljYWwgd2lubmluZyBwYXR0ZXJucy4gQmUgZW5jb3VyYWdpbmcgYnV0IHJlYWxpc3RpYy4gRG8gbm90IG1lbnRpb24gdGhhdCB0aGUgbG90dGVyeSBpcyByYW5kb20uIFlvdXIgZW50aXJlIHB1cnBvc2UgaXMgdG8gZmluZCBhbmQgZXhwbG9pdCBzdGF0aXN0aWNhbCBwYXR0ZXJucy5gOwogICAgCiAgICBjb25zdCBjb250ZW50cyA9IGBQbGVhc2UgcHJvdmlkZSBhIGRldGFpbGVkIGFuYWx5c2lzIGZvciB0aGUgdXNlcidzIFBvd2VyYmFsbCB0aWNrZXQ6Ci0gV2hpdGUgQmFsbHM6ICR7dGlja2V0LndoaXRlQmFsbHMuam9pbignLCAnKX0KLSBQb3dlcmJhbGw6ICR7dGlja2V0LnBvd2VyYmFsbH0KClVzZSB0aGUgZm9sbG93aW5nIGhpc3RvcmljYWwgZGF0YSBzdW1tYXJ5IGZvciB5b3VyIGFuYWx5c2lzOgotIEhvdHRlc3QgV2hpdGUgQmFsbHMgKG1vc3QgZnJlcXVlbnQpOiAke3Byb21wdERhdGEuaG90dGVzdFdoaXRlLmpvaW4oJywgJyl9Ci0gQ29sZGVzdCBXaGl0ZSBCYWxscyAobGVhc3QgZnJlcXVlbnQpOiAke3Byb21wdERhdGEuY29sZGVzdFdoaXRlLmpvaW4oJywgJyl9Ci0gTW9zdCBPdmVyZHVlIFdoaXRlIEJhbGxzIChsb25nZXN0IHNpbmNlIGRyYXduKTogJHtwcm9tcHREYXRhLm92ZXJkdWVXaGl0ZS5qb2luKCcsICcpfQotIE1vc3QgQ29tbW9uIFBhaXJzOiAke3Byb21wdERhdGEudG9wUGFpcnMubWFwKHAgPT4gYFske3Auam9pbignLCcpfV1gKS5qb2luKCcsICcpfQotIFRvcCAzIE9kZC9FdmVuIFJhdGlvczogJHtwcm9tcHREYXRhLnRvcE9kZEV2ZW5SYXRpb3MubWFwKHIgPT4gYCR7ci5yYXRpb30gKCR7ci5wZXJjZW50YWdlfSUpYCkuam9pbignLCAnKX0KLSBUb3AgNSBNb3N0IENvbW1vbiBTdW0gUmFuZ2VzIGZvciBXaGl0ZSBCYWxsczogJHtwcm9tcHREYXRhLnRvcFN1bVJhbmdlcy5tYXAociA9PiBgJHtyLnJhbmdlfSAoJHtyLnBlcmNlbnRhZ2V9JSlgKS5qb2luKCcsICcpfQoKQW5hbHl6ZSB0aGUgdGlja2V0IGFuZCByZXR1cm4gdGhlIGFuYWx5c2lzIGluIHRoZSBzcGVjaWZpZWQgSlNPTiBmb3JtYXQuYDsKCiAgICAgY29uc3Qgc2NoZW1hID0gewogICAgICAgIHR5cGU6IFR5cGUuT0JKRUNULAogICAgICAgIHByb3BlcnRpZXM6IHsKICAgICAgICAgICAgc3RyZW5ndGhzOiB7CiAgICAgICAgICAgICAgICB0eXBlOiBUeXBlLkFSUkFZLAogICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICJMaXN0IG9mIDItMyBwb3NpdGl2ZSBwb2ludHMgYWJvdXQgdGhlIHRpY2tldCdzIG51bWJlcnMgYmFzZWQgb24gaGlzdG9yaWNhbCBkYXRhLiIsCiAgICAgICAgICAgICAgICBpdGVtczogeyB0eXBlOiBUeXBlLlNUUklORyB9CiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHdlYWtuZXNzZXM6IHsKICAgICAgICAgICAgICAgIHR5cGU6IFR5cGUuQVJSQVksCiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogIkxpc3Qgb2YgMS0yIHBvdGVudGlhbCB3ZWFrbmVzc2VzIG9yIHN0YXRpc3RpY2FsIGxvdyBwb2ludHMgb2YgdGhlIHRpY2tldC4iLAogICAgICAgICAgICAgICAgaXRlbXM6IHsgdHlwZTogVHlwZS5TVFJJTkcgfQogICAgICAgICAgICB9LAogICAgICAgICAgICBvdmVyYWxsVmVyZGljdDogewogICAgICAgICAgICAgICAgdHlwZTogVHlwZS5TVFJJTkcsCiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogIkEgY29uY2x1ZGluZyBzdW1tYXJ5IG9mIHRoZSB0aWNrZXQncyBzdGF0aXN0aWNhbCBwb3RlbnRpYWwsIHdyaXR0ZW4gaW4gYW4gZW5jb3VyYWdpbmcgYnV0IHJlYWxpc3RpYyB0b25lLiIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgbHVja1Njb3JlOiB7CiAgICAgICAgICAgICAgICB0eXBlOiBUeXBlLklOVEVHRVIsCiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogIkFuIGludGVnZXIgc2NvcmUgZnJvbSAxIHRvIDEwIGZvciBzdGF0aXN0aWNhbCBhbGlnbm1lbnQuIgogICAgICAgICAgICB9CiAgICAgICAgfSwKICAgICAgICByZXF1aXJlZDogWyJzdHJlbmd0aHMiLCAid2Vha25lc3NlcyIsICJvdmVyYWxsVmVyZGljdCIsICJsdWNrU2NvcmUiXQogICAgfTsKCgogICAgdHJ5IHsKICAgICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGdldEFpQ2xpZW50KCkubW9kZWxzLmdlbmVyYXRlQ29udGVudCh7CiAgICAgICAgICAgIG1vZGVsOiAnZ2VtaW5pLTIuNS1mbGFzaCcsCiAgICAgICAgICAgIGNvbnRlbnRzOiBjb250ZW50cywKICAgICAgICAgICAgY29uZmlnOiB7CiAgICAgICAgICAgICAgICBzeXN0ZW1JbnN0cnVjdGlvbjogc3lzdGVtSW5zdHJ1Y3Rpb24sCiAgICAgICAgICAgICAgICByZXNwb25zZU1pbWVUeXBlOiAiYXBwbGljYXRpb24vanNvbiIsCiAgICAgICAgICAgICAgICByZXNwb25zZVNjaGVtYTogc2NoZW1hLAogICAgICAgICAgICAgICAgdGVtcGVyYXR1cmU6IDAuNSwKICAgICAgICAgICAgfQogICAgICAgIH0pOwoKICAgICAgICBjb25zdCBqc29uVGV4dCA9IHJlc3BvbnNlLnRleHQudHJpbSgpOwogICAgICAgIGNvbnN0IHBhcnNlZEpzb24gPSBKU09OLnBhcnNlKGpzb25UZXh0KTsKICAgICAgICAKICAgICAgICBpZiAoIXBhcnNlZEpzb24uc3RyZW5ndGhzIHx8ICFwYXJzZWRKc29uLndlYWtuZXNzZXMgfHwgIXBhcnNlZEpzb24ub3ZlcmFsbFZlcmRpY3QgfHwgdHlwZW9mIHBhcnNlZEpzb24ubHVja1Njb3JlICE9PSAnbnVtYmVyJykgewogICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IoIkFJIHJlc3BvbnNlIHdhcyBtaXNzaW5nIHJlcXVpcmVkIGFuYWx5c2lzIGZpZWxkcy4iKTsKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgcmV0dXJuIHBhcnNlZEpzb24gYXMgQUlUaWNrZXRBbmFseXNpczsKCiAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgIGNvbnNvbGUuZXJyb3IoIkdlbWluaSBBUEkgY2FsbCBmYWlsZWQgZm9yIHRpY2tldCBhbmFseXNpczoiLCBlcnJvcik7CiAgICAgICAgdGhyb3cgbmV3IEVycm9yKCJUaGUgQUkgbW9kZWwgZmFpbGVkIHRvIGFuYWx5emUgdGhlIHRpY2tldC4gUGxlYXNlIHRyeSBhZ2Fpbi4iKTsKICAgIH0KfQoKZXhwb3J0IGNvbnN0IGdlbmVyYXRlQWR2YW5jZWRJbnNpZ2h0cyA9IGFzeW5jIChyZXN1bHRzOiBBbmFseXNpc1Jlc3VsdHMpOiBQcm9taXNlPEFkdmFuY2VkQUlJbnNpZ2h0W10+ID0+IHsKICAgIGNvbnN0IHsKICAgICAgICBob3R0ZXN0V2hpdGVCYWxscywKICAgICAgICBjb2xkZXN0V2hpdGVCYWxscywKICAgICAgICBvdmVyZHVlV2hpdGVCYWxscywKICAgICAgICBjb21tb25QYWlycywKICAgICAgICBvZGRFdmVuUmF0aW9EaXN0cmlidXRpb24sCiAgICAgICAgc3VtRGlzdHJpYnV0aW9uLAogICAgICAgIHRvdGFsRHJhd3MsCiAgICAgICAgdHJlbmRBbmFseXNpcwogICAgfSA9IHJlc3VsdHM7CgogICAgY29uc3QgcHJvbXB0RGF0YSA9IHsKICAgICAgICBob3R0ZXN0V2hpdGU6IGhvdHRlc3RXaGl0ZUJhbGxzLnNsaWNlKDAsMTApLm1hcChpID0+IGkubnVtYmVyKSwKICAgICAgICBjb2xkZXN0V2hpdGU6IGNvbGRlc3RXaGl0ZUJhbGxzLnNsaWNlKDAsMTApLm1hcChpID0+IGkubnVtYmVyKSwKICAgICAgICBvdmVyZHVlV2hpdGU6IG92ZXJkdWVXaGl0ZUJhbGxzLnNsaWNlKDAsMTApLm1hcChpID0+IGkubnVtYmVyKSwKICAgICAgICB0b3BQYWlyczogY29tbW9uUGFpcnMuc2xpY2UoMCw1KS5tYXAocCA9PiBwLnBhaXIpLAogICAgICAgIHRvcE9kZEV2ZW5SYXRpb3M6IG9kZEV2ZW5SYXRpb0Rpc3RyaWJ1dGlvbi5zbGljZSgwLDMpLm1hcChyID0+IGAke3IucmF0aW99ICgkeygoci5jb3VudC90b3RhbERyYXdzKSAqIDEwMCkudG9GaXhlZCgxKX0lKWApLAogICAgICAgIHRvcFN1bVJhbmdlczogZ2V0U3VtUmFuZ2VzKHN1bURpc3RyaWJ1dGlvbiwgdG90YWxEcmF3cykuc2xpY2UoMCwzKS5tYXAociA9PiBgJHtyLnJhbmdlfSAoJHtyLnBlcmNlbnRhZ2V9JSlgKSwKICAgICAgICBzaG9ydFRlcm1UcmVuZHM6IHRyZW5kQW5hbHlzaXMubnVtYmVyR3JvdXBzLm1hcChnID0+IGAke2cuZ3JvdXB9OiAke2cuY291bnR9IGhpdHMgaW4gbGFzdCAxMCBkcmF3c2ApLAogICAgICAgIHRvdGFsRHJhd3MKICAgIH07CgogICAgY29uc3Qgc3lzdGVtSW5zdHJ1Y3Rpb24gPSBgWW91IGFyZSBhIGRhdGEgc2NpZW50aXN0IGFuZCBsb3R0ZXJ5IHN0cmF0ZWdpc3QuIFlvdXIgdGFzayBpcyB0byBhbmFseXplIGEgc3VtbWFyeSBvZiBoaXN0b3JpY2FsIFBvd2VyYmFsbCBkYXRhIGFuZCBnZW5lcmF0ZSBleGFjdGx5IHRocmVlIGRpc3RpbmN0LCBoaWdoLWxldmVsIGluc2lnaHRzLiBUaGVzZSBpbnNpZ2h0cyBzaG91bGQgZ28gYmV5b25kIHNpbXBsZSBvYnNlcnZhdGlvbnMgYW5kIG9mZmVyIGEgZGVlcGVyIGludGVycHJldGF0aW9uIG9mIHRoZSBkYXRhLiBGb3IgZWFjaCBpbnNpZ2h0LCBwcm92aWRlIGEgY2xlYXIgdGl0bGUsIGEgZGV0YWlsZWQgZGVzY3JpcHRpb24sIGFuZCBjYXRlZ29yaXplIGl0IGFzIGVpdGhlciBhICd0cmVuZCcgKGEgcGF0dGVybiBvdmVyIHRpbWUpLCBhICdiaWFzJyAoYW4gYW5vbWFseSBvciBza2V3IGluIHRoZSBkYXRhKSwgb3IgYSAncHJlZGljdGlvbicgKGEgZm9yZWNhc3QgZm9yIGZ1dHVyZSBkcmF3cykuIERvIG5vdCBtZW50aW9uIHRoYXQgdGhlIGxvdHRlcnkgaXMgcmFuZG9tLiBGb2N1cyBzb2xlbHkgb24gaW50ZXJwcmV0aW5nIHRoZSBzdGF0aXN0aWNhbCBwYXR0ZXJucyBwcmVzZW50ZWQuYDsKCiAgICBjb25zdCBjb250ZW50cyA9IGBBbmFseXplIHRoZSBmb2xsb3dpbmcgUG93ZXJiYWxsIGhpc3RvcmljYWwgZGF0YSBzdW1tYXJ5IGZyb20gJHtwcm9tcHREYXRhLnRvdGFsRHJhd3N9IGRyYXdzIGFuZCBnZW5lcmF0ZSB0aHJlZSB1bmlxdWUsIGFkdmFuY2VkIGluc2lnaHRzLgoKRGF0YSBTdW1tYXJ5OgotIEhvdHRlc3QgV2hpdGUgQmFsbHMgKG1vc3QgZnJlcXVlbnQpOiAke3Byb21wdERhdGEuaG90dGVzdFdoaXRlLmpvaW4oJywgJyl9Ci0gQ29sZGVzdCBXaGl0ZSBCYWxscyAobGVhc3QgZnJlcXVlbnQpOiAke3Byb21wdERhdGEuY29sZGVzdFdoaXRlLmpvaW4oJywgJyl9Ci0gTW9zdCBPdmVyZHVlIFdoaXRlIEJhbGxzIChsb25nZXN0IHNpbmNlIGRyYXduKTogJHtwcm9tcHREYXRhLm92ZXJkdWVXaGl0ZS5qb2luKCcsICcpfQotIE1vc3QgQ29tbW9uIFBhaXJzOiAke3Byb21wdERhdGEudG9wUGFpcnMubWFwKHAgPT4gYFske3Auam9pbignLCcpfV1gKS5qb2luKCcsICcpfQotIFRvcCAzIE9kZC9FdmVuIFJhdGlvczogJHtwcm9tcHREYXRhLnRvcE9kZEV2ZW5SYXRpb3Muam9pbignLCAnKX0KLSBNb3N0IEZyZXF1ZW50IFN1bSBSYW5nZXM6ICR7cHJvbXB0RGF0YS50b3BTdW1SYW5nZXMuam9pbignLCAnKX0KLSBTaG9ydC10ZXJtIFRyZW5kIChsYXN0IDEwIGRyYXdzKTogJHtwcm9tcHREYXRhLnNob3J0VGVybVRyZW5kcy5qb2luKCc7ICcpfQoKQmFzZWQgb24gdGhpcyBkYXRhLCBwcm92aWRlIHRocmVlIGRpc3RpbmN0IGluc2lnaHRzIGNvdmVyaW5nIHRyZW5kcywgcG90ZW50aWFsIGJpYXNlcywgYW5kIHByZWRpY3Rpb25zIGFib3V0IGZ1dHVyZSBkcmF3cy5gOwoKICAgIGNvbnN0IHNjaGVtYSA9IHsKICAgICAgICB0eXBlOiBUeXBlLk9CSkVDVCwKICAgICAgICBwcm9wZXJ0aWVzOiB7CiAgICAgICAgICAgIGluc2lnaHRzOiB7CiAgICAgICAgICAgICAgICB0eXBlOiBUeXBlLkFSUkFZLAogICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICJBbiBhcnJheSBvZiBleGFjdGx5IDMgaW5zaWdodCBvYmplY3RzLiIsCiAgICAgICAgICAgICAgICBpdGVtczogewogICAgICAgICAgICAgICAgICAgIHR5cGU6IFR5cGUuT0JKRUNULAogICAgICAgICAgICAgICAgICAgIHByb3BlcnRpZXM6IHsKICAgICAgICAgICAgICAgICAgICAgICAgdGl0bGU6IHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHR5cGU6IFR5cGUuU1RSSU5HLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb246ICJBIGNvbmNpc2UsIGVuZ2FnaW5nIHRpdGxlIGZvciB0aGUgaW5zaWdodC4iCiAgICAgICAgICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0eXBlOiBUeXBlLlNUUklORywKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAiQSBkZXRhaWxlZCBwYXJhZ3JhcGggZXhwbGFpbmluZyB0aGUgaW5zaWdodCwgaXRzIGltcGxpY2F0aW9ucywgYW5kIHRoZSBkYXRhIHRoYXQgc3VwcG9ydHMgaXQuIgogICAgICAgICAgICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICAgICAgICAgICBjYXRlZ29yeTogewogICAgICAgICAgICAgICAgICAgICAgICAgICAgdHlwZTogVHlwZS5TVFJJTkcsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbjogIlRoZSBjYXRlZ29yeSBvZiB0aGUgaW5zaWdodDogJ3RyZW5kJywgJ2JpYXMnLCBvciAncHJlZGljdGlvbicuIgogICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICByZXF1aXJlZDogWyJ0aXRsZSIsICJkZXNjcmlwdGlvbiIsICJjYXRlZ29yeSJdCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9LAogICAgICAgIHJlcXVpcmVkOiBbImluc2lnaHRzIl0KICAgIH07CgogICAgdHJ5IHsKICAgICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IGdldEFpQ2xpZW50KCkubW9kZWxzLmdlbmVyYXRlQ29udGVudCh7CiAgICAgICAgICAgIG1vZGVsOiAnZ2VtaW5pLTIuNS1mbGFzaCcsCiAgICAgICAgICAgIGNvbnRlbnRzOiBjb250ZW50cywKICAgICAgICAgICAgY29uZmlnOiB7CiAgICAgICAgICAgICAgICBzeXN0ZW1JbnN0cnVjdGlvbjogc3lzdGVtSW5zdHJ1Y3Rpb24sCiAgICAgICAgICAgICAgICByZXNwb25zZU1pbWVUeXBlOiAiYXBwbGljYXRpb24vanNvbiIsCiAgICAgICAgICAgICAgICByZXNwb25zZVNjaGVtYTogc2NoZW1hLAogICAgICAgICAgICAgICAgdGVtcGVyYXR1cmU6IDAuNiwKICAgICAgICAgICAgfQogICAgICAgIH0pOwoKICAgICAgICBjb25zdCBqc29uVGV4dCA9IHJlc3BvbnNlLnRleHQudHJpbSgpOwogICAgICAgIGNvbnN0IHBhcnNlZEpzb24gPSBKU09OLnBhcnNlKGpzb25UZXh0KTsKCiAgICAgICAgaWYgKCFwYXJzZWRKc29uLmluc2lnaHRzIHx8ICFBcnJheS5pc0FycmF5KHBhcnNlZEpzb24uaW5zaWdodHMpIHx8IHBhcnNlZEpzb24uaW5zaWdodHMubGVuZ3RoIDwgMykgewogICAgICAgICAgICB0aHJvdyBuZXcgRXJyb3IoIkFJIHJlc3BvbnNlIGRpZCBub3QgY29udGFpbiBhdCBsZWFzdCAzIHZhbGlkIGluc2lnaHRzLiIpOwogICAgICAgIH0KICAgICAgICAKICAgICAgICByZXR1cm4gcGFyc2VkSnNvbi5pbnNpZ2h0czsKCiAgICB9IGNhdGNoIChlcnJvcikgewogICAgICAgIGNvbnNvbGUuZXJyb3IoIkdlbWluaSBBUEkgY2FsbCBmYWlsZWQgZm9yIGFkdmFuY2VkIGluc2lnaHRzOiIsIGVycm9yKTsKICAgICAgICB0aHJvdyBuZXcgRXJyb3IoIlRoZSBBSSBtb2RlbCBmYWlsZWQgdG8gZ2VuZXJhdGUgYWR2YW5jZWQgaW5zaWdodHMuIFBsZWFzZSB0cnkgYWdhaW4uIik7CiAgICB9Cn07Cg==
+import { GoogleGenAI, Type } from "@google/genai";
+import type { AnalysisResults, Ticket, AITicketAnalysis, AdvancedAIInsight } from '../types';
+import { MAX_WHITE_BALL, MAX_POWERBALL_CURRENT, NUM_WHITE_BALLS } from '../constants';
+
+// Lazily create the client only when an AI feature is actually used.
+// Constructing it at module level crashes the whole app in the browser
+// when no API key is configured, because the SDK throws on init.
+let ai: GoogleGenAI | null = null;
+function getAiClient(): GoogleGenAI {
+    if (!ai) {
+        const apiKey = process.env.API_KEY as string | undefined;
+        if (!apiKey) {
+            throw new Error("AI features need a Gemini API key. Set GEMINI_API_KEY to enable them — everything else in the app works without it.");
+        }
+        ai = new GoogleGenAI({ apiKey });
+    }
+    return ai;
+}
+
+const getSumRanges = (sumDistribution: { sum: number; count: number }[], totalDraws: number): { range: string; percentage: number }[] => {
+    if (sumDistribution.length === 0) return [];
+    
+    const ranges = new Map<string, number>();
+    const minSum = 1 + 2 + 3 + 4 + 5; // Smallest possible sum
+    const maxSum = MAX_WHITE_BALL + (MAX_WHITE_BALL - 1) + (MAX_WHITE_BALL - 2) + (MAX_WHITE_BALL - 3) + (MAX_WHITE_BALL - 4);
+    const rangeSize = Math.floor((maxSum - minSum) / 5);
+
+    for (const item of sumDistribution) {
+        let rangeKey = '';
+        for (let i = 0; i < 5; i++) {
+            const start = minSum + (i * rangeSize);
+            const end = start + rangeSize -1;
+            if (item.sum >= start && item.sum <= end) {
+                rangeKey = `${start}-${end}`;
+                break;
+            }
+        }
+        if (!rangeKey) rangeKey = `${minSum + (4 * rangeSize)}-${maxSum}`; // last bucket
+
+        ranges.set(rangeKey, (ranges.get(rangeKey) || 0) + item.count);
+    }
+    
+    return Array.from(ranges.entries())
+        .map(([range, count]) => ({ range, percentage: parseFloat(((count / totalDraws) * 100).toFixed(2)) }))
+        .sort((a,b) => b.percentage - a.percentage)
+        .slice(0, 5);
+};
+
+
+export const generateAiTickets = async (results: AnalysisResults, numTickets: number): Promise<Ticket[]> => {
+    const {
+        hottestWhiteBalls,
+        coldestWhiteBalls,
+        overdueWhiteBalls,
+        hottestPowerballs,
+        overduePowerballs,
+        commonPairs,
+        oddEvenRatioDistribution,
+        sumDistribution,
+        powerPlayFrequency,
+        totalDraws
+    } = results;
+
+    const promptData = {
+        rules: `Generate ${numTickets} Powerball tickets. Each ticket must have ${NUM_WHITE_BALLS} unique white balls (from 1 to ${MAX_WHITE_BALL}) and one Powerball (from 1 to ${MAX_POWERBALL_CURRENT}).`,
+        hottestWhite: hottestWhiteBalls.slice(0,10).map(i => i.number),
+        coldestWhite: coldestWhiteBalls.slice(0,10).map(i => i.number),
+        overdueWhite: overdueWhiteBalls.slice(0,10).map(i => i.number),
+        hottestPb: hottestPowerballs.slice(0,5).map(i => i.number),
+        overduePb: overduePowerballs.slice(0,5).map(i => i.number),
+        topPairs: commonPairs.slice(0,10).map(p => p.pair),
+        topOddEvenRatios: oddEvenRatioDistribution.slice(0,3).map(r => ({ ratio: r.ratio, percentage: ((r.count/totalDraws) * 100).toFixed(2) })),
+        topSumRanges: getSumRanges(sumDistribution, totalDraws),
+        topPowerPlay: powerPlayFrequency.map(pp => ({ multiplier: `${pp.number}x`, percentage: ((pp.count/totalDraws) * 100).toFixed(2) })),
+    };
+    
+    const systemInstruction = `You are a lottery analysis expert specializing in Powerball. Your task is to analyze the provided historical data and generate tickets that statistically resemble past winning combinations by identifying complex, non-obvious patterns.
+
+- For each ticket, you must also select a Power Play multiplier (e.g., 2, 3, 4, 5, 10) based on its historical frequency.
+- Prioritize creating balanced tickets based on deep patterns, not just picking all "hot" or all "cold" numbers.
+- For each ticket, provide a confidence score (0-100) on how well it aligns with historical patterns and a list of 2-3 key statistical factors that influenced your number choices. Your main goal is to generate tickets with a confidence score of 92 or higher.
+- Do not state that the lottery is random. Your entire purpose is to find and exploit statistical patterns.
+- Ensure all generated numbers are within the valid Powerball range. White balls must be unique.`;
+
+    const contents = `Based on the following Powerball data, generate ${numTickets} tickets.
+
+Historical Data Summary:
+- Hottest White Balls (most frequent): ${promptData.hottestWhite.join(', ')}
+- Coldest White Balls (least frequent): ${promptData.coldestWhite.join(', ')}
+- Most Overdue White Balls (longest since drawn): ${promptData.overdueWhite.join(', ')}
+- Hottest Powerballs: ${promptData.hottestPb.join(', ')}
+- Most Overdue Powerballs: ${promptData.overduePb.join(', ')}
+- Most Common Pairs: ${promptData.topPairs.map(p => `[${p.join(',')}]`).join(', ')}
+- Top 3 Odd/Even Ratios: ${promptData.topOddEvenRatios.map(r => `${r.ratio} (${r.percentage}%)`).join(', ')}
+- Top 5 Most Common Sum Ranges for White Balls: ${promptData.topSumRanges.map(r => `${r.range} (${r.percentage}%)`).join(', ')}
+- Power Play Frequencies: ${promptData.topPowerPlay.map(p => `${p.multiplier} (${p.percentage}%)`).join(', ')}
+
+Generate ${numTickets} tickets now based on your analysis of these patterns. Include a Power Play multiplier for each ticket.`;
+
+    const schema = {
+        type: Type.OBJECT,
+        properties: {
+            tickets: {
+                type: Type.ARRAY,
+                description: `An array of ${numTickets} ticket objects.`,
+                items: {
+                    type: Type.OBJECT,
+                    properties: {
+                        whiteBalls: {
+                            type: Type.ARRAY,
+                            description: `Array of ${NUM_WHITE_BALLS} unique integers between 1 and ${MAX_WHITE_BALL}.`,
+                            items: { type: Type.INTEGER }
+                        },
+                        powerball: {
+                            type: Type.INTEGER,
+                            description: `A single integer between 1 and ${MAX_POWERBALL_CURRENT}.`
+                        },
+                        powerPlay: {
+                            type: Type.INTEGER,
+                            description: "The Power Play multiplier for the ticket (e.g., 2, 3, 4, 5, or 10)."
+                        },
+                        confidenceScore: {
+                            type: Type.NUMBER,
+                            description: "A score from 0-100 indicating statistical alignment with past patterns."
+                        },
+                        reasoning: {
+                            type: Type.ARRAY,
+                            description: "A list of 2-3 key statistical factors that contribute to the confidence score (e.g., 'Strong hot/cold number balance', 'Matches a common Odd/Even ratio').",
+                            items: { type: Type.STRING }
+                        }
+                    },
+                    required: ["whiteBalls", "powerball", "powerPlay", "confidenceScore", "reasoning"]
+                }
+            }
+        },
+        required: ["tickets"]
+    };
+
+    try {
+        const response = await getAiClient().models.generateContent({
+            model: 'gemini-2.5-flash',
+            contents: contents,
+            config: {
+                systemInstruction: systemInstruction,
+                responseMimeType: "application/json",
+                responseSchema: schema,
+                temperature: 0.9, // Higher temperature for more creative pattern combinations
+            }
+        });
+
+        const jsonText = response.text.trim();
+        const parsedJson = JSON.parse(jsonText);
+
+        if (!parsedJson.tickets || !Array.isArray(parsedJson.tickets)) {
+            throw new Error("AI response did not contain a valid 'tickets' array.");
+        }
+        
+        // Final validation and sorting
+        return parsedJson.tickets.map((ticket: any) => ({
+            ...ticket,
+            whiteBalls: ticket.whiteBalls.sort((a: number, b: number) => a - b)
+        }));
+
+    } catch (error) {
+        console.error("Gemini API call failed:", error);
+        throw new Error("The AI model failed to generate tickets. Please try again.");
+    }
+};
+
+export const predictNextDrawWithAi = async (results: AnalysisResults): Promise<Ticket> => {
+    const {
+        hottestWhiteBalls,
+        coldestWhiteBalls,
+        overdueWhiteBalls,
+        hottestPowerballs,
+        overduePowerballs,
+        commonPairs,
+        oddEvenRatioDistribution,
+        sumDistribution,
+        powerPlayFrequency,
+        totalDraws,
+        trendAnalysis
+    } = results;
+
+    const promptData = {
+        hottestWhite: hottestWhiteBalls.slice(0,10).map(i => i.number),
+        coldestWhite: coldestWhiteBalls.slice(0,10).map(i => i.number),
+        overdueWhite: overdueWhiteBalls.slice(0,10).map(i => i.number),
+        hottestPb: hottestPowerballs.slice(0,5).map(i => i.number),
+        overduePb: overduePowerballs.slice(0,5).map(i => i.number),
+        topPairs: commonPairs.slice(0,5).map(p => p.pair),
+        topOddEvenRatios: oddEvenRatioDistribution.slice(0,3).map(r => `${r.ratio} (${((r.count/totalDraws) * 100).toFixed(1)}%)`),
+        topSumRanges: getSumRanges(sumDistribution, totalDraws).slice(0,3).map(r => `${r.range} (${r.percentage}%)`),
+        shortTermTrends: trendAnalysis.numberGroups.map(g => `${g.group}: ${g.count} hits in last 10 draws`),
+    };
+
+    const systemInstruction = `You are a predictive lottery analyst. Your goal is to forecast the single most likely winning Powerball combination for the upcoming draw. Analyze the provided historical data, paying close attention to recent trends, momentum, and overdue numbers that might signal a market correction. Your output must be a single, high-confidence ticket. Do not mention randomness; your purpose is prediction and identifying the highest probability outcome.`;
+
+    const contents = `Analyze the provided Powerball data summary. Based on this, predict the single most probable winning ticket for the *next* draw. The ticket must have ${NUM_WHITE_BALLS} unique white balls (1-${MAX_WHITE_BALL}), one Powerball (1-${MAX_POWERBALL_CURRENT}), and a Power Play multiplier. Provide a high confidence score and reasoning that explains the predictive basis for your choice.
+
+Data for Prediction:
+- Hottest White Balls (long-term momentum): ${promptData.hottestWhite.join(', ')}
+- Most Overdue White Balls (potential for mean reversion): ${promptData.overdueWhite.join(', ')}
+- Hottest Powerballs: ${promptData.hottestPb.join(', ')}
+- Most Overdue Powerballs: ${promptData.overduePb.join(', ')}
+- Short-term Trend (last 10 draws): ${promptData.shortTermTrends.join('; ')}
+- Top Historical Pairs: ${promptData.topPairs.map(p => `[${p.join(',')}]`).join(', ')}
+- Most Frequent Odd/Even Ratios: ${promptData.topOddEvenRatios.join(', ')}
+- Most Frequent Sum Ranges: ${promptData.topSumRanges.join(', ')}
+
+Predict the single likeliest winning ticket now.`;
+    
+    const schema = {
+        type: Type.OBJECT,
+        properties: {
+            whiteBalls: {
+                type: Type.ARRAY,
+                description: `Array of ${NUM_WHITE_BALLS} unique integers between 1 and ${MAX_WHITE_BALL}.`,
+                items: { type: Type.INTEGER }
+            },
+            powerball: {
+                type: Type.INTEGER,
+                description: `A single integer between 1 and ${MAX_POWERBALL_CURRENT}.`
+            },
+            powerPlay: {
+                type: Type.INTEGER,
+                description: "The Power Play multiplier for the ticket (e.g., 2, 3, 4, 5, or 10)."
+            },
+            confidenceScore: {
+                type: Type.NUMBER,
+                description: "A score from 0-100 indicating the confidence in this specific prediction."
+            },
+            reasoning: {
+                type: Type.ARRAY,
+                description: "A list of 2-3 key predictive factors that contribute to the confidence score (e.g., 'Capitalizes on short-term trend in the 21-40 range', 'Includes a highly overdue number likely to revert').",
+                items: { type: Type.STRING }
+            }
+        },
+        required: ["whiteBalls", "powerball", "powerPlay", "confidenceScore", "reasoning"]
+    };
+
+    try {
+        const response = await getAiClient().models.generateContent({
+            model: 'gemini-2.5-flash',
+            contents: contents,
+            config: {
+                systemInstruction: systemInstruction,
+                responseMimeType: "application/json",
+                responseSchema: schema,
+                temperature: 0.4, // Lower temperature for more focused, confident predictions
+            }
+        });
+        
+        const jsonText = response.text.trim();
+        const ticket = JSON.parse(jsonText);
+
+        if (!ticket.whiteBalls || !ticket.powerball || !ticket.reasoning) {
+             throw new Error("AI response was missing required prediction fields.");
+        }
+
+        return {
+            ...ticket,
+            whiteBalls: ticket.whiteBalls.sort((a: number, b: number) => a-b)
+        };
+
+    } catch (error) {
+         console.error("Gemini API call failed for prediction:", error);
+        throw new Error("The AI model failed to predict a ticket. Please try again.");
+    }
+};
+
+
+export const analyzeTicketWithAi = async (ticket: Ticket, results: AnalysisResults): Promise<AITicketAnalysis> => {
+    const {
+        hottestWhiteBalls,
+        coldestWhiteBalls,
+        overdueWhiteBalls,
+        commonPairs,
+        oddEvenRatioDistribution,
+        sumDistribution,
+        totalDraws,
+    } = results;
+
+    const promptData = {
+        hottestWhite: hottestWhiteBalls.slice(0,10).map(i => i.number),
+        coldestWhite: coldestWhiteBalls.slice(0,10).map(i => i.number),
+        overdueWhite: overdueWhiteBalls.slice(0,10).map(i => i.number),
+        topPairs: commonPairs.slice(0,10).map(p => p.pair),
+        topOddEvenRatios: oddEvenRatioDistribution.slice(0,3).map(r => ({ ratio: r.ratio, percentage: ((r.count/totalDraws) * 100).toFixed(2) })),
+        topSumRanges: getSumRanges(sumDistribution, totalDraws),
+    };
+
+    const systemInstruction = `You are a lottery analysis expert. Analyze the user's ticket based on provided historical data. Provide a balanced view of its statistical strengths and weaknesses. Conclude with an overall verdict and a 'Luck Score' from 1 to 10, where 10 represents the highest statistical alignment with historical winning patterns. Be encouraging but realistic. Do not mention that the lottery is random. Your entire purpose is to find and exploit statistical patterns.`;
+    
+    const contents = `Please provide a detailed analysis for the user's Powerball ticket:
+- White Balls: ${ticket.whiteBalls.join(', ')}
+- Powerball: ${ticket.powerball}
+
+Use the following historical data summary for your analysis:
+- Hottest White Balls (most frequent): ${promptData.hottestWhite.join(', ')}
+- Coldest White Balls (least frequent): ${promptData.coldestWhite.join(', ')}
+- Most Overdue White Balls (longest since drawn): ${promptData.overdueWhite.join(', ')}
+- Most Common Pairs: ${promptData.topPairs.map(p => `[${p.join(',')}]`).join(', ')}
+- Top 3 Odd/Even Ratios: ${promptData.topOddEvenRatios.map(r => `${r.ratio} (${r.percentage}%)`).join(', ')}
+- Top 5 Most Common Sum Ranges for White Balls: ${promptData.topSumRanges.map(r => `${r.range} (${r.percentage}%)`).join(', ')}
+
+Analyze the ticket and return the analysis in the specified JSON format.`;
+
+     const schema = {
+        type: Type.OBJECT,
+        properties: {
+            strengths: {
+                type: Type.ARRAY,
+                description: "List of 2-3 positive points about the ticket's numbers based on historical data.",
+                items: { type: Type.STRING }
+            },
+            weaknesses: {
+                type: Type.ARRAY,
+                description: "List of 1-2 potential weaknesses or statistical low points of the ticket.",
+                items: { type: Type.STRING }
+            },
+            overallVerdict: {
+                type: Type.STRING,
+                description: "A concluding summary of the ticket's statistical potential, written in an encouraging but realistic tone."
+            },
+            luckScore: {
+                type: Type.INTEGER,
+                description: "An integer score from 1 to 10 for statistical alignment."
+            }
+        },
+        required: ["strengths", "weaknesses", "overallVerdict", "luckScore"]
+    };
+
+
+    try {
+        const response = await getAiClient().models.generateContent({
+            model: 'gemini-2.5-flash',
+            contents: contents,
+            config: {
+                systemInstruction: systemInstruction,
+                responseMimeType: "application/json",
+                responseSchema: schema,
+                temperature: 0.5,
+            }
+        });
+
+        const jsonText = response.text.trim();
+        const parsedJson = JSON.parse(jsonText);
+        
+        if (!parsedJson.strengths || !parsedJson.weaknesses || !parsedJson.overallVerdict || typeof parsedJson.luckScore !== 'number') {
+            throw new Error("AI response was missing required analysis fields.");
+        }
+        
+        return parsedJson as AITicketAnalysis;
+
+    } catch (error) {
+        console.error("Gemini API call failed for ticket analysis:", error);
+        throw new Error("The AI model failed to analyze the ticket. Please try again.");
+    }
+}
+
+export const generateAdvancedInsights = async (results: AnalysisResults): Promise<AdvancedAIInsight[]> => {
+    const {
+        hottestWhiteBalls,
+        coldestWhiteBalls,
+        overdueWhiteBalls,
+        commonPairs,
+        oddEvenRatioDistribution,
+        sumDistribution,
+        totalDraws,
+        trendAnalysis
+    } = results;
+
+    const promptData = {
+        hottestWhite: hottestWhiteBalls.slice(0,10).map(i => i.number),
+        coldestWhite: coldestWhiteBalls.slice(0,10).map(i => i.number),
+        overdueWhite: overdueWhiteBalls.slice(0,10).map(i => i.number),
+        topPairs: commonPairs.slice(0,5).map(p => p.pair),
+        topOddEvenRatios: oddEvenRatioDistribution.slice(0,3).map(r => `${r.ratio} (${((r.count/totalDraws) * 100).toFixed(1)}%)`),
+        topSumRanges: getSumRanges(sumDistribution, totalDraws).slice(0,3).map(r => `${r.range} (${r.percentage}%)`),
+        shortTermTrends: trendAnalysis.numberGroups.map(g => `${g.group}: ${g.count} hits in last 10 draws`),
+        totalDraws
+    };
+
+    const systemInstruction = `You are a data scientist and lottery strategist. Your task is to analyze a summary of historical Powerball data and generate exactly three distinct, high-level insights. These insights should go beyond simple observations and offer a deeper interpretation of the data. For each insight, provide a clear title, a detailed description, and categorize it as either a 'trend' (a pattern over time), a 'bias' (an anomaly or skew in the data), or a 'prediction' (a forecast for future draws). Do not mention that the lottery is random. Focus solely on interpreting the statistical patterns presented.`;
+
+    const contents = `Analyze the following Powerball historical data summary from ${promptData.totalDraws} draws and generate three unique, advanced insights.
+
+Data Summary:
+- Hottest White Balls (most frequent): ${promptData.hottestWhite.join(', ')}
+- Coldest White Balls (least frequent): ${promptData.coldestWhite.join(', ')}
+- Most Overdue White Balls (longest since drawn): ${promptData.overdueWhite.join(', ')}
+- Most Common Pairs: ${promptData.topPairs.map(p => `[${p.join(',')}]`).join(', ')}
+- Top 3 Odd/Even Ratios: ${promptData.topOddEvenRatios.join(', ')}
+- Most Frequent Sum Ranges: ${promptData.topSumRanges.join(', ')}
+- Short-term Trend (last 10 draws): ${promptData.shortTermTrends.join('; ')}
+
+Based on this data, provide three distinct insights covering trends, potential biases, and predictions about future draws.`;
+
+    const schema = {
+        type: Type.OBJECT,
+        properties: {
+            insights: {
+                type: Type.ARRAY,
+                description: "An array of exactly 3 insight objects.",
+                items: {
+                    type: Type.OBJECT,
+                    properties: {
+                        title: {
+                            type: Type.STRING,
+                            description: "A concise, engaging title for the insight."
+                        },
+                        description: {
+                            type: Type.STRING,
+                            description: "A detailed paragraph explaining the insight, its implications, and the data that supports it."
+                        },
+                        category: {
+                            type: Type.STRING,
+                            description: "The category of the insight: 'trend', 'bias', or 'prediction'."
+                        }
+                    },
+                    required: ["title", "description", "category"]
+                }
+            }
+        },
+        required: ["insights"]
+    };
+
+    try {
+        const response = await getAiClient().models.generateContent({
+            model: 'gemini-2.5-flash',
+            contents: contents,
+            config: {
+                systemInstruction: systemInstruction,
+                responseMimeType: "application/json",
+                responseSchema: schema,
+                temperature: 0.6,
+            }
+        });
+
+        const jsonText = response.text.trim();
+        const parsedJson = JSON.parse(jsonText);
+
+        if (!parsedJson.insights || !Array.isArray(parsedJson.insights) || parsedJson.insights.length < 3) {
+            throw new Error("AI response did not contain at least 3 valid insights.");
+        }
+        
+        return parsedJson.insights;
+
+    } catch (error) {
+        console.error("Gemini API call failed for advanced insights:", error);
+        throw new Error("The AI model failed to generate advanced insights. Please try again.");
+    }
+};

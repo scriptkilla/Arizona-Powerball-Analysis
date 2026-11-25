@@ -4,6 +4,7 @@ import FileUpload from './components/FileUpload';
 import Dashboard from './components/Dashboard';
 import TicketGenerator from './components/TicketGenerator';
 import GeminiLuckyDip from './components/GeminiLuckyDip';
+import AskEmber from './components/AskEmber';
 import DateRangeFilter from './components/DateRangeFilter';
 import AdvancedAiInsights from './components/AdvancedAiInsights';
 import { performHistoricalAnalysis } from './services/lotteryAnalysis';
@@ -164,6 +165,7 @@ function App() {
                                 isGenerating={isGenerating}
                             />
                             <GeminiLuckyDip analysisResults={activeAnalysis} />
+                            <AskEmber analysisResults={activeAnalysis} />
                              <div className="bg-secondary p-4 rounded-lg shadow-md">
                                  <button onClick={() => setShowProbabilityStorm(true)} className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md">
                                     Launch Probability Storm
